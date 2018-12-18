@@ -29,7 +29,7 @@ git clone https://github.com/ArchCast/graphite-postgres-connections.git
 Other software the works in conjunction with graphite-postgres-connections:
 
 * [Nagios](https://www.nagios.org/downloads/) or [Icinga 1.x](https://icinga.com/) with check_nrpe executable 
-* [check_postgres Nagios plugin](https://bucardo.org/check_postgres/)
+* [check_postgres](https://bucardo.org/check_postgres/) Nagios plugin.
 * External [Graphite](https://graphiteapp.org/) server.
 * External [PostgreSQL](https://www.postgresql.org/) servers.
 
