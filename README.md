@@ -11,13 +11,13 @@ These instructions will get you graphite-postgres-connections up and running:
 
 1.  It is recommended to install and run graphite-postgres-connections on the Nagios/Icinga server.  Otherwise, additional tweaks is required to allow it to run properly with a Nagios/Icinga and Postgres servers. 
 
-2.  Prerequisite software installed.  See the Prerequisite section.
+2.  Prerequisite software installed.  See the Prerequisites section.
 
-3.  Update/redefine values in the code.  See the Prerequisite section.
+3.  Update/redefine values in the code.  See the Prerequisites section.
 
 4.  When all necessary steps are completed and configured accordingly, the script should normally not take longer than a minute to finish running.  Otherwise, proceed to troubleshoot.
 
-5.  Add gr-pg-cx.py to crontab with the interval of your choice.
+5.  Add gr-pg-cx.py to crontab with the run interval of your choice.
 
 
 ## Prerequisites
