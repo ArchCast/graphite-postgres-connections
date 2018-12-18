@@ -17,9 +17,11 @@ git clone https://github.com/ArchCast/graphite-postgres-connections.git
 
 3.  Update/redefine values in the code.  See the Prerequisites section.
 
-4.  When all necessary steps are completed and configured accordingly, the script should normally not take longer than a minute to finish running.  Otherwise, proceed to troubleshoot.  See Troubleshooting section.
+4.  "check_postgres_connections" must be defined in /etc/nrpe.cfg on the Postgres servers.  Then restart the nrpe service on all affected Postgres servers.
 
-5.  Add gr-pg-cx.py to crontab with the run interval of your choice.
+5.  When all necessary steps are completed and configured accordingly, the script should normally not take longer than a minute to finish running.  Otherwise, proceed to troubleshoot.  See Troubleshooting section.
+
+6.  Add gr-pg-cx.py to crontab with the run interval of your choice.
 
 
 ## Prerequisites
