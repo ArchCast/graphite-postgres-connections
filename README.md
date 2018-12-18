@@ -8,14 +8,16 @@ graphite-postgres-connections (gr-pg-cx.py) is a Python script that polls total 
 
 These instructions will get you graphite-postgres-connections up and running:
 
-
-1.  It is recommended to install and run graphite-postgres-connections on the Nagios/Icinga server.  Otherwise, additional tweaks is required to allow it to run properly with a Nagios/Icinga and Postgres servers. 
+1.  It is recommended to download and run graphite-postgres-connections on the Nagios/Icinga server.  Otherwise, additional tweaks is required to allow it to run properly with a Nagios/Icinga and Postgres servers. 
+```
+git clone https://github.com/ArchCast/graphite-postgres-connections.git
+```
 
 2.  Prerequisite software installed.  See the Prerequisites section.
 
 3.  Update/redefine values in the code.  See the Prerequisites section.
 
-4.  When all necessary steps are completed and configured accordingly, the script should normally not take longer than a minute to finish running.  Otherwise, proceed to troubleshoot.
+4.  When all necessary steps are completed and configured accordingly, the script should normally not take longer than a minute to finish running.  Otherwise, proceed to troubleshoot.  See Troubleshooting section.
 
 5.  Add gr-pg-cx.py to crontab with the run interval of your choice.
 
@@ -45,6 +47,7 @@ All data will not be pulled should a Postgres server fails or becomes inaccessib
 
 gr-pg-cx.py 'hangs':
 
+* Control-C to exit and examine the error output for possible clues.
 * Ensure all Postgres servers are accessible via NRPE.
 * Ensure all Postgres servers have check_postgres Nagios plugin installed and nrpe.cfg is properly configured.
 * Ensure all Postgres servers are configured properly.
