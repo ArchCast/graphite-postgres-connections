@@ -1,5 +1,5 @@
 # graphite-postgres-connections
-Polls metrics from Postgres and delivers them to Graphite
+Polls metrics from Postgres and delivers them to Graphite.
 
 graphite-postgres-connections (gr-pg-cx.py) is a Python script that polls total connection count from a list of Postgres servers using Nagios' NRPE and delivers the data to a Graphite server.
 
