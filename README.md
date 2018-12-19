@@ -13,9 +13,9 @@ These instructions will get you graphite-postgres-connections up and running:
 git clone https://github.com/ArchCast/graphite-postgres-connections.git
 ```
 
-2.  Prerequisite software installed.  See the Prerequisites section.
+2.  Prerequisite software installed.  See the Prerequisites > Software section.
 
-3.  Update/redefine values in the code.  See the Prerequisites section.
+3.  Update/redefine values in the code.  See the Prerequisites > Configuration section.
 
 4.  Update nrpe.cfg to include "check_postgres_connections" command.  See Prerequisites > Configuration section.
 
