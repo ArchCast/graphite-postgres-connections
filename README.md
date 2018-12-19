@@ -37,7 +37,7 @@ Other required software that works in conjunction with graphite-postgres-connect
 
 **Configuration**
 * Update/redefine values in gr-pg-cx.py to your specifications. (See comments in the code.)
-* Update/redefine 'path' in the dissect function.
+* Update/redefine 'path' in the function "dissect".
 * On all affected Postgres servers, define the NRPE command "check_postgres_connections" in /etc/nrpe.cfg and restart the nrpe service on all affected servers.  i.e.:
 ```
 command[check_postgres_connections]=/path/to/check_postgres.pl --action=connection --db=your_database
