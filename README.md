@@ -17,7 +17,7 @@ git clone https://github.com/ArchCast/graphite-postgres-connections.git
 
 3.  Update/redefine values in the code.  See the Prerequisites section.
 
-4.  "check_postgres_connections" must be defined in /etc/nrpe.cfg on the Postgres servers.  Then restart the nrpe service on all affected Postgres servers.
+4.  Update nrpe.cfg to include "check_postgres_connections" command.  See Prerequisites > Configuration section.
 
 5.  When all necessary steps are completed and configured accordingly, the script should normally not take longer than a minute to finish running.  Otherwise, proceed to troubleshoot.  See Troubleshooting section.
 
@@ -38,6 +38,10 @@ Other required software that works in conjunction with graphite-postgres-connect
 **Configuration**
 * Update/redefine values in gr-pg-cx.py to your specifications. (See comments in the code.)
 * Update/redefine 'path' in the dissect function.
+* On all affected Postgres servers, define the NRPE command "check_postgres_connections" in /etc/nrpe.cfg and restart the nrpe service on all affected servers.  i.e.:
+```
+command[check_postgres_connections]=/path/to/check_postgres.pl --action=connection --db=your_database
+```
 
 
 ## Known Issue
