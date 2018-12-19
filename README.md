@@ -46,7 +46,7 @@ command[check_postgres_connections]=/path/to/check_postgres.pl --action=connecti
 
 ## Known Issue
 
-All data will not be pulled should a Postgres server fails or becomes inaccessible in the list.
+All data will not be pulled if a Postgres server fails or becomes inaccessible in the list.
 
 
 ## Troubleshooting
