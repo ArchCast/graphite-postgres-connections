@@ -55,7 +55,7 @@ gr-pg-cx.py 'hangs':
 
 * Control-C to exit and examine the error output for possible clues.
 * Ensure all Postgres servers are accessible via NRPE.
-* Ensure all Postgres servers have check_postgres Nagios plugin installed and nrpe.cfg is properly configured.
+* Ensure all Postgres servers have [check_postgres Nagios plugin](https://bucardo.org/check_postgres/) installed and nrpe.cfg is properly configured.
 * Ensure all Postgres servers are configured properly.
 * Try restarting the nrpe service.
 
